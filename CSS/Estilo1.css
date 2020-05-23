@@ -122,12 +122,6 @@ a:hover{
   display: block;
 }
 
-.active{
-	font-family: 'Links';
-	background-color:#FF7272;
-	width: relative;
-	}
-
 /*imagenes*/	
 img{
 	border-radius:10%;
