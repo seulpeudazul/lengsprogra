@@ -125,12 +125,77 @@ a:hover{
 .active{
 	font-family: 'Links';
 	background-color:#FF7272;
+	width: relative;
 	}
 
-/*imagenes*/	
-img{
-	border-radius:10%;
+/*imagenes*/
+	img{
+		border-radius:10%;
 	}
+	
+	.overlay {
+		border-radius:10%;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		height: 100%;
+		width: 100%;
+		opacity: 0;
+		transition: .5s ease;
+		background-color: rgba(255, 114, 114, 0.54);
+	}
+	
+	.text {
+		color: white;
+		font-size: 20px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		-webkit-transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%);
+		transform: translate(-50%, -50%);
+		text-align: center;
+	}
+
+	.container:hover .overlay {
+		opacity: 1;
+	}
+
+	.column {
+		float: left;
+		padding-left: 20px;
+		padding-top: 65px;
+		padding-bottom: 5px;
+	}
+
+	.row::after {
+		content: "";
+		clear: both;
+		display: table;
+	}
+	.container {
+		top: 15px;
+		position: relative;
+	}
+	.centered {
+		position: absolute;
+		bottom: 8px;
+		left: 50%;
+	}
+	
+	.center {
+		position: absolute;
+		left: 50%;
+		top: 20%;
+		transform: translate(-50%, -50%);
+	}
+
+  /* optional size in px or %: */
+  width: 100px;
+  height: 100px;
+}
 
 /*layout index*/
 table {

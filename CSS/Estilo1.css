@@ -125,6 +125,7 @@ a:hover{
 .active{
 	font-family: 'Links';
 	background-color:#FF7272;
+	width: relative;
 	}
 
 /*imagenes*/	
