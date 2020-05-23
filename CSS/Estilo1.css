@@ -89,7 +89,7 @@ a:hover{
   background-color: #FFB385;
 }
 
-.dropdown:hover:not(.active) .dropbtn:not(.active) {
+.dropdown:hover:not(.active) .dropbtn:hover:not(.active) {
 	text-align: center;
   background-color: #FFB385;
   width:100%;
@@ -118,7 +118,7 @@ a:hover{
   background-color: #FFB385;
 }
 
-.dropdown:hover .dropdown-content {
+.dropdown:hover .dropdown-content:hover:not(.active) {
   display: block;
 }
 
