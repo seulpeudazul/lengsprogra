@@ -15,11 +15,11 @@ for i in (1..n)
   if(varSwitcheable)then
     for y in (1..actual)
       if(contador>=n)then
-      abort()
+        abort()
       else
-      print("#{positivos} ")
-      positivos += 2
-      contador += 1
+        print("#{positivos} ")
+        positivos += 2
+        contador += 1
       end
     end
     varSwitcheable=false
