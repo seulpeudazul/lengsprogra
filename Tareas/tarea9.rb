@@ -1,3 +1,7 @@
+puts("Azul Carolina Martínez Cabañas")
+puts("1868435					 ITS")
+puts('Periodo Enero-Junio 2020')
+puts("Ing. Ismael Gutiérrez Pimentel")
 puts "Convertidor de pesos mexicanos a divisas extranjeras.\nIngrese una de las siguientes opciones: "
 puts "1 para dólar"
 puts "2 para euro"

@@ -3,7 +3,7 @@
 @font-face {font-family: Links; src: url("Fuentes/Montserrat-Bold.ttf");}
 @font-face {font-family: Texto; src: url("Fuentes/Roboto-Regular.ttf");}
 
-body,p {
+body {
 	background-color:#FAE7CB;
 	font-family: 'Texto';	
 	vertical-align: baseline;
@@ -14,18 +14,25 @@ body,p {
 	overflow: hidden;
 	}
 	
-h2,h3{
-	margin-top: 0.15em;
-	margin-bottom: 0.15em;
-	font-family: 'Titulos';
+	p,h2,h3{
+		margin-top:1px;
+		margin-bottom:10px;
+		line-height: 0;
+		padding:10px;
+	}
+	p{
+	font-family: inherit;	
+	font-size:20px;
+	vertical-align: baseline;
+	color:black;
+	overflow: hidden;
 	}
 	
-h4{
-	margin-top: 0.15em;
-	margin-bottom: 0.15em;
-	font-family: 'Titulos';
+	h2,h3{
+	font-size:28px;
 	color: #FF7272;
-}
+	font-family: 'Titulos';
+	}
 	
 a:link,a:visited{
 	font-family: 'Titulos';
@@ -128,10 +135,6 @@ ul:after {
       width: 100%;
       z-index: 1;
   }
- 
-pre {
-	height:3%;
-}
 	
 /*imagenes*/
 	img{
@@ -195,6 +198,7 @@ pre {
 		top: 15px;
 		position: relative;
 	}
+	
 	.centered {
 		position: absolute;
 		bottom: 8px;
@@ -207,7 +211,8 @@ pre {
 		top: 20%;
 		transform: translate(-50%, -50%);
 	}
-	
+
+/*layouts*/	
 	.layouttareas1 {
 		position: absolute;
 		left: 180px;
@@ -219,3 +224,21 @@ pre {
 		left: 180px;
 		top: 25%;
 	}
+
+/*layout investigaciones*/
+.text-block3 {
+		border-radius:20%;
+		position: absolute;
+		top:360px;
+		right: 15px;
+		background-color: #002447;
+		color: white;
+		padding-left: 132px;
+		padding-right: 132px;
+	}
+	
+.investigaciones{
+	height:200px;
+	width:200px;
+	padding:10px;
+}
