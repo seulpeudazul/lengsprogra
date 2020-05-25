@@ -14,12 +14,6 @@ body {
 	overflow: hidden;
 	}
 	
-	p,h2,h3{
-		margin-top:1px;
-		margin-bottom:10px;
-		line-height: 0;
-		padding:10px;
-	}
 	p{
 	font-family: inherit;	
 	font-size:20px;
@@ -242,3 +236,37 @@ ul:after {
 	width:200px;
 	padding:10px;
 }
+
+.fila{
+	font-size:20px;
+	margin-bottom:10px;
+	font-family:inherit;
+	color:black;
+	padding:20px;
+}
+
+.fila::after {
+		content: "";
+		clear: both;
+		display: table;
+	}
+
+.columnatext {
+		width:70%;
+		float: left;
+		padding-left: 5px;
+		padding-top: 5px;
+		padding-bottom: 5px;
+	}
+
+.columnaimg {
+		float: right;
+		padding-left: 5px;
+		padding-top: 5px;
+		padding-bottom: 5px;
+	}
+
+.contenedor {
+		top: 15px;
+		position: relative;
+	}
