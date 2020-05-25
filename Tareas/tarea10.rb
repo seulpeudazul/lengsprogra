@@ -1,7 +1,7 @@
-puts("Azul Carolina Martínez Cabañas")
-puts("1868435					 ITS")
-puts('Periodo Enero-Junio 2020')
-puts("Ing. Ismael Gutiérrez Pimentel")
+puts "Azul Carolina Martínez Cabañas"
+puts "1868435					 ITS"
+puts "Periodo Enero-Junio 2020"
+puts "Ing. Ismael Gutiérrez Pimentel"
 puts "Serie  A (Exponentes impares)"
 puts "Ingrese el número de la serie al que se quiere llegar: "
 

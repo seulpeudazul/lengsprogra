@@ -1,7 +1,7 @@
-puts("Azul Carolina Martínez Cabañas")
-puts("1868435					 ITS")
-puts('Periodo Enero-Junio 2020')
-puts("Ing. Ismael Gutiérrez Pimentel")
+puts "Azul Carolina Martínez Cabañas"
+puts "1868435					 ITS"
+puts "Periodo Enero-Junio 2020"
+puts "Ing. Ismael Gutiérrez Pimentel"
 puts("Suma de matrices")
 print "Ingresar el número de filas de la matriz A: "
 mA = gets().to_i

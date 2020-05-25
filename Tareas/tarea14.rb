@@ -1,7 +1,7 @@
-puts("Azul Carolina Martínez Cabañas")
-puts("1868435					 ITS")
-puts('Periodo Enero-Junio 2020')
-puts("Ing. Ismael Gutiérrez Pimentel")
+puts "Azul Carolina Martínez Cabañas"
+puts "1868435					 ITS"
+puts "Periodo Enero-Junio 2020"
+puts "Ing. Ismael Gutiérrez Pimentel"
 puts "Búsqueda en Matriz"
 puts "Ingrese la cantidad de filas de la matriz: "
 n = gets().to_i
