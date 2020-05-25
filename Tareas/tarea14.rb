@@ -33,7 +33,7 @@ for i in (0...n)
 end
 puts "\nEl numero a buscar es: #{buscar}"
 
-if contador>1
+if contador>0
     puts "\nVeces que aparece en el matriz: #{contador}"
 else
     puts "No se encontró al número en la matriz"
