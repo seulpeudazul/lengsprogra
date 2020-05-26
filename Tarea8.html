@@ -57,19 +57,19 @@
 	<h3>JAVA</h3><br>
 	<div class="codigotareas">
 	<pre>
-		import javax.swing.*;
-		public class Tarea8 {
-			public static void main(String[] args) { 
-				JOptionPane.showMessageDialog(null, "Azul Carolina Martínez Cabañas\n1868435 ITS\nPeriodo Enero-Junio 2020\nIng. Ismael Gutiérrez Pimentel");  
+import javax.swing.*;
+	public class Tarea8 {
+		public static void main(String[] args) { 
+			JOptionPane.showMessageDialog(null, "Azul Carolina Martínez Cabañas\n1868435 ITS\nPeriodo Enero-Junio 2020\nIng. Ismael Gutiérrez Pimentel");  
 
-				Integer escala = Integer.parseInt(JOptionPane.showInputDialog("Convertidor de temperaturas\n¿Qué escala inicial desea escoger?\n1 para Celsius\n2 para Fahrenheit"));  
+			Integer escala = Integer.parseInt(JOptionPane.showInputDialog("Convertidor de temperaturas\n¿Qué escala inicial desea escoger?\n1 para Celsius\n2 para Fahrenheit"));  
 
-				switch (escala){ 
-					case 1: 
-						Double nT = Double.parseDouble(JOptionPane.showInputDialog("Ingrese los grados centígrados ")); 
-						Double tempF = ((nT * 1.8) + 32); 
-						JOptionPane.showMessageDialog(null, "Grados Fahrenheit: "+tempF); 
-					break; 
+			switch (escala){ 
+				case 1: 
+					Double nT = Double.parseDouble(JOptionPane.showInputDialog("Ingrese los grados centígrados ")); 
+					Double tempF = ((nT * 1.8) + 32); 
+					JOptionPane.showMessageDialog(null, "Grados Fahrenheit: "+tempF); 
+				break; 
 					
 				case 2: 
 					Double nF = Double.parseDouble(JOptionPane.showInputDialog("Ingrese los grados Fahrenheit")); 
@@ -91,16 +91,16 @@
 	<h3>RUBY</h3><br>
 	<div class="codigotareas">
 	<pre>
-		puts "Azul Carolina Martínez Cabañas" 
-		puts "1868435					 ITS" 
-		puts "Periodo Enero-Junio 2020" 
-		puts "Ing. Ismael Gutiérrez Pimentel" 
-		puts "Convertidor de temperaturas" 
-		puts "¿Qué escala inicial desea escoger?"  
-		puts "1 para Celsius\n2 para Fahrenheit" 
-		puts "\n" 
+puts "Azul Carolina Martínez Cabañas" 
+puts "1868435					 ITS" 
+puts "Periodo Enero-Junio 2020" 
+puts "Ing. Ismael Gutiérrez Pimentel" 
+puts "Convertidor de temperaturas" 
+puts "¿Qué escala inicial desea escoger?"  
+puts "1 para Celsius\n2 para Fahrenheit" 
+puts "\n" 
 		
-		escala = gets().to_i 
+	escala = gets().to_i 
 		
 		case escala 
 			when 1 

@@ -318,7 +318,7 @@ hr.separador{
 	height:500px;
 	text-shadow:1px 1px rgba(137, 0, 0, 0.28);
     font-family: 'Text';
-    overflow-x: hidden;
+    overflow-x: scroll;
     overflow-y: scroll;
 	padding:10px;
 	margin-left:50px;

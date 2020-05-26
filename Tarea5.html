@@ -89,44 +89,27 @@
 	
 	<br><br><br>
 	<div class="fila">
-		<div class="columnatext2">
+		<div class="columnatext">
 			<div class="contenedor">
 				Existen diferentes interpretes para Scheme que se pueden encontrar en línea como Shaka Scheme o más conocido, Bigloo donde
 				se producen ejecutables que se pueden comunicar con C y Java. Bigloo se puede encontrar para descargar en su sitio oficial: https://www-sop.inria.fr/mimosa/fp/Bigloo/
 				Un ejemplo de lo que se puede lograr con Scheme es el siguiente:<br>
 <pre>
 <pre>
-(define WINDOW-WIDTH 150)
-(define WINDOW-HEIGHT 180)
-
-; A world is a string.
-; Its display is a green 18-point image of its text.
-; show-world : world -> image
-(define (show-world world)
-  (text world 18 "green"))
-"Examples of show-world:"
-(show-world "hello") "should be" (text "hello" 18 "green")
-
-; The next world is formed by adding a d to the end of the previous one.
-; next-world : world -> world
-(define (next-world world)
-  (string-append world "d"))
-"Examples of next-world:"
-(next-world "ace") "should be" "aced"
-
-(big-bang WINDOW-WIDTH WINDOW-HEIGHT 1 "abc")
-(on-update-event show-world)
-(on-tick-event next-world)
+(define (fib-iter n)
+  (do ((num 2 (+ num 1))
+       (fib-prev 1 fib)
+       (fib 1 (+ fib fib-prev)))
+      ((>= num n) fib)))
 </pre>
 			</div>
 		</div>
 		<div class="contenedor">
-			<img src="Imagenes/t5_4.png" width="220" height="220" class="image sombra" style="float:left;box-shadow: 5px 5px 6px rgba(137, 0, 0, 0.28);">
-			<br><br><br><br><br><br><br><br><br><br><br>
-			<img src="Imagenes/t5_3.png" width="320" height="385" class="image sombra" style="float:right;box-shadow: 5px 5px 6px rgba(137, 0, 0, 0.28);">
+			<img src="Imagenes/t5_4.png" width="250" height="250" class="image sombra" style="float:left;box-shadow: 5px 5px 6px rgba(137, 0, 0, 0.28);">
 		</div>
 	</div>
-	<br><br><br><br><br><br><br>
+	
+	<br>
 	<h2>Bibliografía</h2>
 	<div class="fila" style="padding-bottom:10px;">
 		<div class="columnabio">
