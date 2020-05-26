@@ -4,6 +4,8 @@
 @font-face {font-family: Texto; src: url("Fuentes/Roboto-Regular.ttf");}
 
 body,p {
+	overflow-x: hidden;
+    overflow-y: scroll;
 	background-color:#FAE7CB;
 	font-family: 'Texto';	
 	vertical-align: baseline;
@@ -11,7 +13,6 @@ body,p {
 	margin: 0;
 	padding: 0;
 	border: 0;	
-	overflow: hidden;
 	}
 	
 h2,h3{

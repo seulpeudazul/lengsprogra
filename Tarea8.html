@@ -1,0 +1,124 @@
+<html>
+	<head>
+		<title>Tarea 8</title>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="CSS/Estilo2.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="engine1/jquery.js"></script>
+	</head>
+
+	<body>
+	<!--Menu-->
+	<div class="barra">
+	<ul class="main-navigation">
+		<div class="center">
+			<li><a href="Tarea7.html">🠨</a></li>
+			<li><a href="Personales.html">Personales</a>
+				<ul>
+					<li class="sub"><a href="Autobiografia.html">Autobiografía</a></li>
+					<li class="sub"><a href="Pasatiempo.html">Pasatiempo</a></li>
+					<li class="sub"><a href="Biografia.html">Biografía</a></li>
+				</ul>
+			</li>
+			<li><a href="Index.html">⌂</a></li>
+			<li><a href="Tareas.html">Tareas</a>
+				<ul>
+					<li class="sub"><a href="Tarea1.html">Tarea 1</a></li>
+					<li class="sub"><a href="Tarea2.html">Tarea 2</a></li>
+					<li class="sub"><a href="Tarea3.html">Tarea 3</a></li>
+					<li class="sub"><a href="Tarea4.html">Tarea 4</a></li>
+					<li class="sub"><a href="Tarea5.html">Tarea 5</a></li>
+					<li class="sub"><a href="Tarea6.html">Tarea 6</a></li>
+					<li class="sub"><a href="Tarea7.html">Tarea 7</a></li>
+					<li class="sub"><a href="Tarea8.html">Tarea 8</a></li>
+					<li class="sub"><a href="Tarea9.html">Tarea 9</a></li>
+					<li class="sub"><a href="Tarea10.html">Tarea 10</a></li>
+					<li class="sub"><a href="Tarea11.html">Tarea 11</a></li>
+					<li class="sub"><a href="Tarea12.html">Tarea 12</a></li>
+					<li class="sub"><a href="Tarea13.html">Tarea 13</a></li>
+					<li class="sub"><a href="Tarea14.html">Tarea 14</a></li>
+					<li class="sub"><a href="Tarea15.html">Tarea 15</a></li>
+					<li class="sub"><a href="Tarea16.html">Tarea 16</a></li>
+				</ul>
+			</li>
+			<li><a href="Tarea9.html">🠪</a></li>
+		</div>
+	</ul>
+	</div>
+	<!-- Fin Menu-->
+
+	<br><br><br>
+	<h2>Tarea 8:</h2><p>Elabore un programa que mediante un menú de opciones permita
+	calcular la conversión de escala de temperatura:<br>
+	1. De grados Centigrados a grados Farenheit<br>
+	2. De grados Farenheit a grados Centígrados</p>
+	
+	<h3>JAVA</h3><br>
+	<div class="codigotareas">
+	<pre>
+		import javax.swing.*;
+		public class Tarea8 {
+			public static void main(String[] args) { 
+				JOptionPane.showMessageDialog(null, "Azul Carolina Martínez Cabañas\n1868435 ITS\nPeriodo Enero-Junio 2020\nIng. Ismael Gutiérrez Pimentel");  
+
+				Integer escala = Integer.parseInt(JOptionPane.showInputDialog("Convertidor de temperaturas\n¿Qué escala inicial desea escoger?\n1 para Celsius\n2 para Fahrenheit"));  
+
+				switch (escala){ 
+					case 1: 
+						Double nT = Double.parseDouble(JOptionPane.showInputDialog("Ingrese los grados centígrados ")); 
+						Double tempF = ((nT * 1.8) + 32); 
+						JOptionPane.showMessageDialog(null, "Grados Fahrenheit: "+tempF); 
+					break; 
+					
+				case 2: 
+					Double nF = Double.parseDouble(JOptionPane.showInputDialog("Ingrese los grados Fahrenheit")); 
+					Double tempC = ((nF - 32) / 1.8); 
+					JOptionPane.showMessageDialog(null,"Grados centígrados: " + tempC); 
+                break; 
+				default: 
+					JOptionPane.showMessageDialog(null, "Ingresar una opción válida"); 
+				} 
+			} 
+		} 
+	</pre>
+	</div>
+	
+	<br>
+	<hr class="separador">
+	<br>
+	
+	<h3>RUBY</h3><br>
+	<div class="codigotareas">
+	<pre>
+		puts "Azul Carolina Martínez Cabañas" 
+		puts "1868435					 ITS" 
+		puts "Periodo Enero-Junio 2020" 
+		puts "Ing. Ismael Gutiérrez Pimentel" 
+		puts "Convertidor de temperaturas" 
+		puts "¿Qué escala inicial desea escoger?"  
+		puts "1 para Celsius\n2 para Fahrenheit" 
+		puts "\n" 
+		
+		escala = gets().to_i 
+		
+		case escala 
+			when 1 
+				puts "Ingrese los grados centígrados " 
+				n = gets().to_i 
+				temp = ((n * 1.8) + 32) 
+				puts "Grados Fahrenheit: #{temp}" 
+
+			when 2 
+				puts "Ingrese los grados fahrenheit" 
+				n = gets().to_i 
+				temp = ((n - 32) / 1.8) 
+				puts "Grados centígrados: #{temp}" 
+
+			else  
+				puts "Ingresar una de las opciones válidas" 
+		end
+	</pre>
+	</div>
+	</body>
+</html>

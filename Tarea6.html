@@ -1,0 +1,129 @@
+<html>
+	<head>
+		<title>Tarea 6</title>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="CSS/Estilo2.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="engine1/jquery.js"></script>
+	</head>
+
+	<body>
+	<!--Menu-->
+	<div class="barra">
+	<ul class="main-navigation">
+		<div class="center">
+			<li><a href="Tarea5.html">🠨</a></li>
+			<li><a href="Personales.html">Personales</a>
+				<ul>
+					<li class="sub"><a href="Autobiografia.html">Autobiografía</a></li>
+					<li class="sub"><a href="Pasatiempo.html">Pasatiempo</a></li>
+					<li class="sub"><a href="Biografia.html">Biografía</a></li>
+				</ul>
+			</li>
+			<li><a href="Index.html">⌂</a></li>
+			<li><a href="Tareas.html">Tareas</a>
+				<ul>
+					<li class="sub"><a href="Tarea1.html">Tarea 1</a></li>
+					<li class="sub"><a href="Tarea2.html">Tarea 2</a></li>
+					<li class="sub"><a href="Tarea3.html">Tarea 3</a></li>
+					<li class="sub"><a href="Tarea4.html">Tarea 4</a></li>
+					<li class="sub"><a href="Tarea5.html">Tarea 5</a></li>
+					<li class="sub"><a href="Tarea6.html">Tarea 6</a></li>
+					<li class="sub"><a href="Tarea7.html">Tarea 7</a></li>
+					<li class="sub"><a href="Tarea8.html">Tarea 8</a></li>
+					<li class="sub"><a href="Tarea9.html">Tarea 9</a></li>
+					<li class="sub"><a href="Tarea10.html">Tarea 10</a></li>
+					<li class="sub"><a href="Tarea11.html">Tarea 11</a></li>
+					<li class="sub"><a href="Tarea12.html">Tarea 12</a></li>
+					<li class="sub"><a href="Tarea13.html">Tarea 13</a></li>
+					<li class="sub"><a href="Tarea14.html">Tarea 14</a></li>
+					<li class="sub"><a href="Tarea15.html">Tarea 15</a></li>
+					<li class="sub"><a href="Tarea16.html">Tarea 16</a></li>
+				</ul>
+			</li>
+			<li><a href="Tarea7.html">🠪</a></li>
+		</div>
+	</ul>
+	</div>
+	<!-- Fin Menu-->
+
+	<br><br><br>
+	<h2>Tarea 6:</h2><p>Investigar los símbolos, sintaxis, esqueleto de los programas, aplicación a descargar para editar y ejecutar, a qué
+	tipo de paradigma pertenece y un ejemplo de un programa escrito en <span style="color: #FF7272">Haskell</span>.</p>
+	<div class="fila">
+		<div class="columnatext2">
+			<div class="contenedor">
+				Haskell es un lenguaje funcional puro, no estricto y fuertemente tipificado por lo que usa un orden no aplicativo,
+				sus elementos utilizables están clasificados en distintas categorías o tipos. Sus programas consisten en definiciones
+				de funciones. Haskell tiene un amplio uso de símbolos que se utilizan después en su sintaxis:
+				<span style="color: #FF7272">• Tuplas:</span> Un dato compuesto donde el tipo de cada componente puede ser distinto. Ej:<br>
+<pre>
+Prelude> ()
+() :: ()
+Prelude> (0a 0, True)
+(0a 0 , True) :: (Char ,Bool)
+Prelude> (0a 0, True, 1.5)
+(0a 0, True, 1.5) :: (Char ,Bool, Double)
+</pre>
+			<span style="color: #FF7272">• Listas:</span> Una colección de cero o más elementos todos del mismo tipo. En Haskell, los símbolos
+			[] se utilizan para identificar aquellas listas vacías mientras que (:) permite agregar un elemento al principio de la lista. Ejemplo:<br>
+<pre>
+Prelude> 1 : (2 : (3 : [ ]))
+[1, 2, 3] :: [Integer ]
+Prelude> 1 : 2 : 3 : [ ]
+[1, 2, 3] :: [Integer ]
+Prelude> [1, 2, 3]
+[1, 2, 3] :: [Integer
+</pre>
+			</div>
+		</div>
+		<div class="contenedor">
+			<img src="Imagenes/t6_1.jpg" width="360" height="260" class="image sombra" style="float:left; box-shadow: 5px 5px 6px rgba(137, 0, 0, 0.28);">
+			<br><br><br><br><br><br><br><br><br><br><br><br><br>
+			<img src="Imagenes/t6_3.png" width="350" height="270" class="image sombra" style="float:right; box-shadow: 5px 5px 6px rgba(137, 0, 0, 0.28);">
+		</div>
+	</div>
+	
+	<br><br>
+	<div class="fila">
+		<div class="columnatext">
+			<div class="contenedor">
+				<span style="color: #FF7272">• Comentarios:</span> Aquellos que sean de una sola línea comienzan con dos guiones consecutivos --,
+			y si son comentarios de más de una línea comienzan por los caracteres {- y terminan con -}. Ejemplo:<br>
+<pre>
+– – Esto es un comentario
+{- Esto es un comentario
+de más de una línea -}
+</pre>
+			<span style="color: #FF7272">• Comparación de Patrones: </span> Al aplicar la función a un parámetro concreto la comparación de patrones
+			determina la ecuación a utilizar.<br>
+<pre>
+infixr 3 &&
+(&&) :: Bool → Bool → Bool
+False && x = False
+True && x = x
+infixr 2 ||
+(||) :: Bool → Bool → Bool
+False || x = x
+True || x = True
+</pre>
+			</div>
+		</div>
+		<div class="contenedor">
+			<img src="Imagenes/t6_2.jpg" width="250" height="350" class="image sombra" style="float:left;box-shadow: 5px 5px 6px rgba(137, 0, 0, 0.28);">
+		</div>
+	</div>
+	
+	<br><br><br><br><br><br><br><br>
+	<h2>Bibliografía</h2>
+	<div class="fila" style="padding-bottom:10px;">
+		<div class="columnabio">
+			<div class="contenedor">
+				<span style="color: #FF7272">•</span> ND.(2002)<i>Syntax Reference</i>, de The Haskell 98 Report. Sitio web:https://www.haskell.org/onlinereport/syntax-iso.html<br><br>
+				<span style="color: #FF7272">•</span> ND.(2016).<i>Aprende Haskell en 10 minutos</i>, de Universidad de Las Palmas. Sitio web: https://wiki.haskell.org/Aprende_Haskell_en_10_minutos<br><br>
+			</div>
+		</div>
+	</div>
+	</body>
+</html>

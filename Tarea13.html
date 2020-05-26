@@ -1,0 +1,145 @@
+<html>
+	<head>
+		<title>Tarea 13</title>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="CSS/Estilo2.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="engine1/jquery.js"></script>
+	</head>
+
+	<body>
+	<!--Menu-->
+	<div class="barra">
+	<ul class="main-navigation">
+		<div class="center">
+			<li><a href="Tarea12.html">🠨</a></li>
+			<li><a href="Personales.html">Personales</a>
+				<ul>
+					<li class="sub"><a href="Autobiografia.html">Autobiografía</a></li>
+					<li class="sub"><a href="Pasatiempo.html">Pasatiempo</a></li>
+					<li class="sub"><a href="Biografia.html">Biografía</a></li>
+				</ul>
+			</li>
+			<li><a href="Index.html">⌂</a></li>
+			<li><a href="Tareas.html">Tareas</a>
+				<ul>
+					<li class="sub"><a href="Tarea1.html">Tarea 1</a></li>
+					<li class="sub"><a href="Tarea2.html">Tarea 2</a></li>
+					<li class="sub"><a href="Tarea3.html">Tarea 3</a></li>
+					<li class="sub"><a href="Tarea4.html">Tarea 4</a></li>
+					<li class="sub"><a href="Tarea5.html">Tarea 5</a></li>
+					<li class="sub"><a href="Tarea6.html">Tarea 6</a></li>
+					<li class="sub"><a href="Tarea7.html">Tarea 7</a></li>
+					<li class="sub"><a href="Tarea8.html">Tarea 8</a></li>
+					<li class="sub"><a href="Tarea9.html">Tarea 9</a></li>
+					<li class="sub"><a href="Tarea10.html">Tarea 10</a></li>
+					<li class="sub"><a href="Tarea11.html">Tarea 11</a></li>
+					<li class="sub"><a href="Tarea12.html">Tarea 12</a></li>
+					<li class="sub"><a href="Tarea13.html">Tarea 13</a></li>
+					<li class="sub"><a href="Tarea14.html">Tarea 14</a></li>
+					<li class="sub"><a href="Tarea15.html">Tarea 15</a></li>
+					<li class="sub"><a href="Tarea16.html">Tarea 16</a></li>
+				</ul>
+			</li>
+			<li><a href="Tarea14.html">🠪</a></li>
+		</div>
+	</ul>
+	</div>
+	<!-- Fin Menu-->
+
+	<br><br><br>
+	<h2>Tarea 13:</h2><p>Elaborar un programa que realice una búsqueda de un número en un vector, mostrando 
+	solamente un mensaje indicando cuantas veces apareció el número. Además de imprimir el vector.<br>
+	</p>
+	
+	<h3>JAVA</h3><br>
+	<div class="codigotareas">
+		<pre>
+import javax.swing.*;
+
+public class Tarea13 {
+    public static void main(String[] args) {
+        JOptionPane.showMessageDialog(null, "Azul Carolina Martínez Cabañas\n1868435 ITS\nPeriodo Enero-Junio 2020\nIng. Ismael Gutiérrez Pimentel");
+        int n = Integer.parseInt(JOptionPane.showInputDialog(null,"Búsqueda en un Vector\n Ingrese el tamaño del vector"));
+        if(n==1){
+            JOptionPane.showMessageDialog(null, "Ingresar números mayores a 1");
+            System.exit(0);
+        }
+        int [] vec = new int[n];
+        for (int i = 0; i <n ; i++) {
+            vec[i] = Integer.parseInt(JOptionPane.showInputDialog(null, "Ingrese el número que pertenece al vector"));
+        }
+        String mensaje = "[ ";
+        for (int i = 0; i <n ; i++) {
+            mensaje += vec[i];
+            mensaje += " ";
+        }
+        mensaje += " ]";
+        JOptionPane.showMessageDialog(null, "El vector es:\n" + mensaje);
+        int buscar = Integer.parseInt(JOptionPane.showInputDialog("Ingrese el número a buscar en el vector"));
+        int contador = 0;
+        for (int i = 0; i <n ; i++) {
+            if(vec[i] == buscar){
+                contador +=1 ;
+            }
+        }
+        String impresion = "El número a buscar es: " + buscar + "\n";
+        if (contador!=0){
+            impresion += "Veces que aparece en el vector: " + contador;
+        }else{
+            impresion += "Número no encontrado en el vector";
+        }
+        JOptionPane.showMessageDialog(null, impresion);
+    }
+}
+		</pre>
+	</div>
+	
+	<br>
+	<hr class="separador">
+	<br>
+	
+	<h3>RUBY</h3><br>
+	<div class="codigotareas">
+		<pre>
+puts "Azul Carolina Martínez Cabañas"
+puts "1868435					 ITS"
+puts "Periodo Enero-Junio 2020"
+puts "Ing. Ismael Gutiérrez Pimentel"
+puts"Búsqueda en un Vector"
+puts "Ingrese el tamaño del vector: "
+n = gets().to_i
+if(n==1)then
+    abort("Ingresar números mayores a 1")
+end
+vec = Array.new(n)
+for i in (0...n)
+    puts "Ingrese el número que pertenece al vector: "
+	vec[i] = gets().to_i
+    end
+puts("El vector es: ")	
+print("[")
+for i in(0...(n - 1)) #Penúltimo elemento
+	print("#{vec[i]}, ") 
+end
+print("#{vec[i+1]}]") #Último elemento, se concatena el ]
+print("\nIngrese el número a buscar: ")
+buscar = gets().to_i
+contador = 0
+for i in(0...n)
+	if(vec[i]==buscar)then
+		contador +=1
+    end
+end 
+puts("El numero a buscar es: #{buscar} \n")
+if contador!=0
+    puts("Veces que aparece en el vector: #{contador}")
+else
+    puts("Número no encontrado en el vector")
+end
+
+		</pre>
+	</div>
+	</body>
+</html>

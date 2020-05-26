@@ -1,0 +1,157 @@
+<html>
+	<head>
+		<title>Tarea 3</title>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="CSS/Estilo2.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="engine1/jquery.js"></script>
+	</head>
+
+	<body>
+	<!--Menu-->
+	<div class="barra">
+	<ul class="main-navigation">
+		<div class="center">
+			<li><a href="Tarea2.html">🠨</a></li>
+			<li><a href="Personales.html">Personales</a>
+				<ul>
+					<li class="sub"><a href="Autobiografia.html">Autobiografía</a></li>
+					<li class="sub"><a href="Pasatiempo.html">Pasatiempo</a></li>
+					<li class="sub"><a href="Biografia.html">Biografía</a></li>
+				</ul>
+			</li>
+			<li><a href="Index.html">⌂</a></li>
+			<li><a href="Tareas.html">Tareas</a>
+				<ul>
+					<li class="sub"><a href="Tarea1.html">Tarea 1</a></li>
+					<li class="sub"><a href="Tarea2.html">Tarea 2</a></li>
+					<li class="sub"><a href="Tarea3.html">Tarea 3</a></li>
+					<li class="sub"><a href="Tarea4.html">Tarea 4</a></li>
+					<li class="sub"><a href="Tarea5.html">Tarea 5</a></li>
+					<li class="sub"><a href="Tarea6.html">Tarea 6</a></li>
+					<li class="sub"><a href="Tarea7.html">Tarea 7</a></li>
+					<li class="sub"><a href="Tarea8.html">Tarea 8</a></li>
+					<li class="sub"><a href="Tarea9.html">Tarea 9</a></li>
+					<li class="sub"><a href="Tarea10.html">Tarea 10</a></li>
+					<li class="sub"><a href="Tarea11.html">Tarea 11</a></li>
+					<li class="sub"><a href="Tarea12.html">Tarea 12</a></li>
+					<li class="sub"><a href="Tarea13.html">Tarea 13</a></li>
+					<li class="sub"><a href="Tarea14.html">Tarea 14</a></li>
+					<li class="sub"><a href="Tarea15.html">Tarea 15</a></li>
+					<li class="sub"><a href="Tarea16.html">Tarea 16</a></li>
+				</ul>
+			</li>
+			<li><a href="Tarea4.html">🠪</a></li>
+		</div>
+	</ul>
+	</div>
+	<!-- Fin Menu-->
+
+	<br><br><br>
+	<h2>Tarea 3:</h2><p>Investigar los símbolos, sintaxis, esqueleto de los programas, aplicación a descargar para editar y ejecutar, a qué
+	tipo de paradigma pertenece y un ejemplo de un programa escrito en <span style="color: #FF7272">Prolog</span>.</p>
+	<div class="fila">
+		<div class="columnatext">
+			<div class="contenedor">
+				Prolog es un lenguaje de programación de alto nivel basado de la lógica de predicados. En donde sus programas son un conjunto de cláusulas
+				de Horn que siguen la sintaxis siguiente:
+				<span style="color: #FF7272">•</span> Tiene como caracteres válidos mayúsculas, minúsculas, dígitos y caracteres
+				especiales + - * / ^ < > ~ : ; . _ ? \ ( ) [ ]
+				<span style="color: #FF7272">•</span> Todas las claúsulas acaban con "<span style="color: #FF7272">.</span>"<br>
+				<span style="color: #FF7272">•</span> Se utiliza "<span style="color: #FF7272">:-</span>" para expresar una
+					condicional.<br>
+				<span style="color: #FF7272">•</span> Los nombres de predicado y función siguen las pautas habituales de los
+					identificadores, pero comienzan con <span style="color: #FF7272">minúscula</span>.<br>
+				<span style="color: #FF7272">•</span> Los nombres de variable también siguen dichas pautas, pero comienzan por
+					<span style="color: #FF7272">mayúscula</span>.<br>
+				<span style="color: #FF7272">•</span> Los átomos en el cuerpo de las reglas se sepraran mediante comas
+					"<span style="color: #FF7272">,</span>" que se leen como "<span style="color: #FF7272">y</span>"<br>
+			</div>
+		</div>
+		<div class="contenedor">
+			<img src="Imagenes/t3_1.jfif" width="250" height="250" class="image sombra" style="float:left; box-shadow: 5px 5px 6px rgba(137, 0, 0, 0.28);">
+		</div>
+	</div>
+	
+	<br>
+	<div class="fila">
+		<div class="columnatext2">
+			<div class="contenedor">
+				Para comenzar a programar en Prolog debemos conocer las expresiones a utilizar con respecto a nuestro motivo:
+				<span style="color: #FF7272">• Variables:</span> deben empezar con letra mayúsucula o el símbolo '_'. Ej: Objeto2,_x23.
+				<span style="color: #FF7272">• Operadores</span> tenemos operadodes artiméticos y relacionales como: SUMA, RESTA, Sqrt(X), log(X),etc.
+				<span style="color: #FF7272">• Predicados: </span> son la relación directa con una expresión y deben ser declarados,
+				basado en la declaración de los tipos de dominos para cada uno de los nombres de los objetos. Ej: mercado(encargado, vendedor).
+				<span style="color: #FF7272">• Estructuras: </span> los objetos estructurados son aquellos que tienen varios componentes
+				que a la vez pueden ser sus propias estructuras. Ej: fecha(1, enero, 1975).
+				<span style="color: #FF7272">• Consultas: </span> para plantear una consulta en prolog debe probar que esta es verdadera. Ejemplo:<br>
+				paciente("ana", femenino).<br>
+				YES
+				<span style="color: #FF7272">• Comentarios: </span> los comentarios que son de más de una línea se hacen de la siguiente manera
+				/*comentario*/, sino se puede utilizar el símbolo de porcentaje %.<br>
+				<span style="color: #FF7272">• Clausulas y relaciones: </span> cada relación es definida por una o más cláusulas. Ejemplo:<br>
+				Dado a y b, determinar cuando R(a,b) es verdadero.
+				Dado b, encontrar todos los X/R(x,b) es verdadero.<br><br>
+				
+				Un programa de prolog se ejecuta cuando el usuario introduce una pregunta un conjunto de términos que deben ser
+				todos ciertos. Los hechos y las reglas de la base de datos se usan para determinar cuáles sustituciones de variables
+				de la pregunta son congruentes como la información de la base de datos. Como intérprete, Prolog solicita entradas al
+				usuario donde él digita una pregunta o nombre de una función, a lo que el programa imprime 'Yes' si es verdad o 'No'
+				si es falso. Es por su funcionamiento que Prolog se reconoce como parte del paradigma de los lenguajes
+				<span style="color: #FF7272">lógicos y declarativos</span>.
+			</div>
+		</div>
+		<div class="contenedor">
+			<img src="Imagenes/t3_3.png" width="350" height="300" class="image sombra" style="float:left;box-shadow: 5px 5px 6px rgba(137, 0, 0, 0.28);"><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+			<img src="Imagenes/t3_2.png" width="280" height="300" class="image sombra" style="float:right; box-shadow: 5px 5px 6px rgba(137, 0, 0, 0.28);">
+		</div>
+	</div>
+	
+	<br>
+	<div class="fila">
+		<div class="columnatext2">
+			<div class="contenedor">
+				Para comenzar a programar en este lenguaje debes adquirir el sistema en : http://www.swi-prolog.org/ en donde se
+				pueden encontrarlo para distintas plataformas. Prolog tiene la posibilidad de ser interpretado o compilado, pero
+				usualmente se utiliza el intérprete. Un ejemplo de programa en prolog es el siguiente:
+				En un archivo de texto con nombre 'parejas.pl'se agrega:<br>
+				<pre>
+chica(rosa).
+chica(laura).
+chica(ana).
+
+chico(pedro).
+chico(juan).
+chico(pablo).
+
+pareja(X,Y):- chico(X),chica(Y)
+				</pre><br>
+				
+				Se guarda el archivo, lo consultamos desde el intérprete:<br>
+				<pre>
+?- [parejas].
+o bien
+?- consult(parejas). ?- consult(’parejas.pl’).
+?- [’<path>/parejas.pl’].
+				</pre>
+			</div>
+		</div>
+		<div class="contenedor">
+			<img src="Imagenes/t3_4.jpg" width="400" height="300" class="image sombra" style="float:left;box-shadow: 5px 5px 6px rgba(137, 0, 0, 0.28);"><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+			<img src="Imagenes/t3_5.png" width="340" height="270" class="image sombra" style="float:right;box-shadow: 5px 5px 6px rgba(137, 0, 0, 0.28);">
+		</div>
+	</div>
+	
+	<br><br>
+	<h2>Bibliografía</h2>
+	<div class="fila" style="padding-bottom:10px;">
+		<div class="columnabio">
+			<div class="contenedor">
+				<span style="color: #FF7272">•</span> Sánchez,J.(ND)<i>Prolog</i>, de Univeridad Computense de Madrid. Sitio web: http://gpd.sip.ucm.es/jaime/pl/prolog.pdf<br><br>
+				<span style="color: #FF7272">•</span> Rodríguez, A.(ND).<i>PROLOG</i>, de UNIVERSIDAD AUTONÓMA DE BAJA CALIFORNIA. Sitio web:http://fcqi.tij.uabc.mx/usuarios/ardiaz/material/manual_lab_prolog.pdf<br><br>
+			</div>
+		</div>
+	</div>
+	</body>
+</html>

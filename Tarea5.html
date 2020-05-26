@@ -1,0 +1,140 @@
+<html>
+	<head>
+		<title>Tarea 5</title>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="CSS/Estilo2.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="engine1/jquery.js"></script>
+	</head>
+
+	<body>
+	<!--Menu-->
+	<div class="barra">
+	<ul class="main-navigation">
+		<div class="center">
+			<li><a href="Tarea4.html">🠨</a></li>
+			<li><a href="Personales.html">Personales</a>
+				<ul>
+					<li class="sub"><a href="Autobiografia.html">Autobiografía</a></li>
+					<li class="sub"><a href="Pasatiempo.html">Pasatiempo</a></li>
+					<li class="sub"><a href="Biografia.html">Biografía</a></li>
+				</ul>
+			</li>
+			<li><a href="Index.html">⌂</a></li>
+			<li><a href="Tareas.html">Tareas</a>
+				<ul>
+					<li class="sub"><a href="Tarea1.html">Tarea 1</a></li>
+					<li class="sub"><a href="Tarea2.html">Tarea 2</a></li>
+					<li class="sub"><a href="Tarea3.html">Tarea 3</a></li>
+					<li class="sub"><a href="Tarea4.html">Tarea 4</a></li>
+					<li class="sub"><a href="Tarea5.html">Tarea 5</a></li>
+					<li class="sub"><a href="Tarea6.html">Tarea 6</a></li>
+					<li class="sub"><a href="Tarea7.html">Tarea 7</a></li>
+					<li class="sub"><a href="Tarea8.html">Tarea 8</a></li>
+					<li class="sub"><a href="Tarea9.html">Tarea 9</a></li>
+					<li class="sub"><a href="Tarea10.html">Tarea 10</a></li>
+					<li class="sub"><a href="Tarea11.html">Tarea 11</a></li>
+					<li class="sub"><a href="Tarea12.html">Tarea 12</a></li>
+					<li class="sub"><a href="Tarea13.html">Tarea 13</a></li>
+					<li class="sub"><a href="Tarea14.html">Tarea 14</a></li>
+					<li class="sub"><a href="Tarea15.html">Tarea 15</a></li>
+					<li class="sub"><a href="Tarea16.html">Tarea 16</a></li>
+				</ul>
+			</li>
+			<li><a href="Tarea6.html">🠪</a></li>
+		</div>
+	</ul>
+	</div>
+	<!-- Fin Menu-->
+
+	<br><br><br>
+	<h2>Tarea 5:</h2><p>Investigar los símbolos, sintaxis, esqueleto de los programas, aplicación a descargar para editar y ejecutar, a qué
+	tipo de paradigma pertenece y un ejemplo de un programa escrito en <span style="color: #FF7272">Scheme</span>.</p>
+	<div class="fila">
+		<div class="columnatext2">
+			<div class="contenedor">
+				Scheme es un dialecto de LISP, un lenguaje interpretado y funcional, que surgió en los laboratorios del MIT en 1975 en la busqueda de un lenguaje con una
+				semántica muy clara y sencilla. En este lenguaje un <span style="color: #FF7272">símbolo</span> es lo que en otros lenguajes se denomina
+				<span style="color: #FF7272">identificador</span>, siendo que en Scheme los símbolos e identificadores pueden contener caracteres
+				internacionales (Unicode, UTF-8). Con respecto a su sintaxis encontramos que:<br>
+				
+				<span style="color: #FF7272">• Expresiones:</span> Tienen una forma denominada Notación Prefija de Cambridge en la que la expresión está delimitada
+				por paréntesis y el operando va seguido de los operadores. Sintaxis: (&lt;funcion>) &lt;arg1> ... &lt;argn><br>
+				
+				<span style="color: #FF7272">• Define:</span> Única instrucción para definir nuevos elementos. Sintaxis: (define &lt;simbolo> &lt;expresion>).<br>
+				
+				<span style="color: #FF7272">• Procedimientos:</span> Se define una función con el nombre, argumentos y cuerpo dados. Sintaxis: (define &lt;nombre-funcion> &lt;argumentos>) &lt;cuerpo>).<br>
+				
+				<span style="color: #FF7272">• Condicional: </span> El funcionamiento del condicional es evaluar condición, si el resultado es VERDADERO, evaluar exp-verdad,
+				sino evaluar exp-falso. Sintaxis: (if &lt;condicion> &lt;exp-verdad> &lt;exp-falso>)<br>
+				
+				<span style="color: #FF7272">• Cond: </span> Forma especial que evalúa una serie de condiciones y devuelve el valor de la expresión asociada a la
+				primera condición verdadera. Sintaxis:<br>
+<pre>
+(condicional
+	(&lt;exp-cond-1> &lt;exp-cond-1>)
+	(&lt;exp-cond-2> &lt;exp-cond-2>)
+	...
+	(else &lt;exp-consec-else>))
+</pre>
+			</div>
+		</div>
+		<div class="contenedor">
+			<img src="Imagenes/t5_1.jpg" width="370" height="270" class="image sombra" style="float:left; box-shadow: 5px 5px 6px rgba(137, 0, 0, 0.28);">
+			<br><br><br><br><br><br><br><br><br><br><br><br><br>
+			<img src="Imagenes/t5_2.png" width="315" height="290" class="image sombra" style="float:right; box-shadow: 5px 5px 6px rgba(137, 0, 0, 0.28);">
+		</div>
+	</div>
+	
+	<br><br><br>
+	<div class="fila">
+		<div class="columnatext2">
+			<div class="contenedor">
+				Existen diferentes interpretes para Scheme que se pueden encontrar en línea como Shaka Scheme o más conocido, Bigloo donde
+				se producen ejecutables que se pueden comunicar con C y Java. Bigloo se puede encontrar para descargar en su sitio oficial: https://www-sop.inria.fr/mimosa/fp/Bigloo/
+				Un ejemplo de lo que se puede lograr con Scheme es el siguiente:<br>
+<pre>
+<pre>
+(define WINDOW-WIDTH 150)
+(define WINDOW-HEIGHT 180)
+
+; A world is a string.
+; Its display is a green 18-point image of its text.
+; show-world : world -> image
+(define (show-world world)
+  (text world 18 "green"))
+"Examples of show-world:"
+(show-world "hello") "should be" (text "hello" 18 "green")
+
+; The next world is formed by adding a d to the end of the previous one.
+; next-world : world -> world
+(define (next-world world)
+  (string-append world "d"))
+"Examples of next-world:"
+(next-world "ace") "should be" "aced"
+
+(big-bang WINDOW-WIDTH WINDOW-HEIGHT 1 "abc")
+(on-update-event show-world)
+(on-tick-event next-world)
+</pre>
+			</div>
+		</div>
+		<div class="contenedor">
+			<img src="Imagenes/t5_4.png" width="220" height="220" class="image sombra" style="float:left;box-shadow: 5px 5px 6px rgba(137, 0, 0, 0.28);">
+			<br><br><br><br><br><br><br><br><br><br><br>
+			<img src="Imagenes/t5_3.png" width="320" height="385" class="image sombra" style="float:right;box-shadow: 5px 5px 6px rgba(137, 0, 0, 0.28);">
+		</div>
+	</div>
+	<br><br><br><br><br><br><br>
+	<h2>Bibliografía</h2>
+	<div class="fila" style="padding-bottom:10px;">
+		<div class="columnabio">
+			<div class="contenedor">
+				<span style="color: #FF7272">•</span> ND.(2010)<i>Introducción a Scheme</i>, de Univeridad de Alicante. Sitio web:http://www.dccia.ua.es/dccia/inf/asignaturas/LPP/2010-2011/teoria/tema2.html#sec-3_6<br><br>
+				<span style="color: #FF7272">•</span> González, A.(ND).<i>GUÍA BÁSICA DE SCHEME v.4</i>, de Universidad de Las Palmas. Sitio web: http://www.gedlc.ulpgc.es/docencia/lp/documentacion/GB_Scheme.pdf<br><br>
+			</div>
+		</div>
+	</div>
+	</body>
+</html>

@@ -1,0 +1,153 @@
+<html>
+	<head>
+		<title>Tarea 15</title>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="CSS/Estilo2.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="engine1/jquery.js"></script>
+	</head>
+
+	<body>
+	<!--Menu-->
+	<div class="barra">
+	<ul class="main-navigation">
+		<div class="center">
+			<li><a href="Tarea14.html">🠨</a></li>
+			<li><a href="Personales.html">Personales</a>
+				<ul>
+					<li class="sub"><a href="Autobiografia.html">Autobiografía</a></li>
+					<li class="sub"><a href="Pasatiempo.html">Pasatiempo</a></li>
+					<li class="sub"><a href="Biografia.html">Biografía</a></li>
+				</ul>
+			</li>
+			<li><a href="Index.html">⌂</a></li>
+			<li><a href="Tareas.html">Tareas</a>
+				<ul>
+					<li class="sub"><a href="Tarea1.html">Tarea 1</a></li>
+					<li class="sub"><a href="Tarea2.html">Tarea 2</a></li>
+					<li class="sub"><a href="Tarea3.html">Tarea 3</a></li>
+					<li class="sub"><a href="Tarea4.html">Tarea 4</a></li>
+					<li class="sub"><a href="Tarea5.html">Tarea 5</a></li>
+					<li class="sub"><a href="Tarea6.html">Tarea 6</a></li>
+					<li class="sub"><a href="Tarea7.html">Tarea 7</a></li>
+					<li class="sub"><a href="Tarea8.html">Tarea 8</a></li>
+					<li class="sub"><a href="Tarea9.html">Tarea 9</a></li>
+					<li class="sub"><a href="Tarea10.html">Tarea 10</a></li>
+					<li class="sub"><a href="Tarea11.html">Tarea 11</a></li>
+					<li class="sub"><a href="Tarea12.html">Tarea 12</a></li>
+					<li class="sub"><a href="Tarea13.html">Tarea 13</a></li>
+					<li class="sub"><a href="Tarea14.html">Tarea 14</a></li>
+					<li class="sub"><a href="Tarea15.html">Tarea 15</a></li>
+					<li class="sub"><a href="Tarea16.html">Tarea 16</a></li>
+				</ul>
+			</li>
+			<li><a href="Tarea16.html">🠪</a></li>
+		</div>
+	</ul>
+	</div>
+	<!-- Fin Menu-->
+
+	<br><br><br>
+	<h2>Tarea 15:</h2><p>Elaborar un programa que que calcule la suma de dos matrices que ingrese el usuario.
+	</p>
+	
+	<h3>JAVA</h3><br>
+	<div class="codigotareas">
+		<pre>
+import javax.swing.*;
+
+public class Tarea15 {
+    public static void main(String[] args) {
+        JOptionPane.showMessageDialog(null, "Azul Carolina Martínez Cabañas\n1868435 ITS\nPeriodo Enero-Junio 2020\nIng. Ismael Gutiérrez Pimentel");
+        int mA = Integer.parseInt(JOptionPane.showInputDialog("Suma de matrices\nIngresar el número de filas de la matriz A:"));
+        int nA = Integer.parseInt(JOptionPane.showInputDialog("Ingresar el número de columnas de la matriz A:"));
+        int mB = Integer.parseInt(JOptionPane.showInputDialog("Ingresar el número de filas de la matriz B:"));
+        int nB = Integer.parseInt(JOptionPane.showInputDialog("Ingresar el número de columnas de la matriz B:"));
+        if(mA != mB || nA != nB){
+            JOptionPane.showMessageDialog(null, "Las dimensiones de las matrices no son válidas");
+            System.exit(0);
+        }else{
+            int [][] matA = new int[mA][nA];
+            int [][] matB = new int[mB][nB];
+            for (int i = 0; i <=(mA-1) ; i++) {
+                for (int j = 0; j <=(nA -1); j++) {
+                    matA[i][j] = Integer.parseInt(JOptionPane.showInputDialog("Ingresar el numero de la matriz A "));
+                }
+            }
+            for (int i = 0; i <=(mB -1) ; i++) {
+                for (int j = 0; j <= (nB -1); j++) {
+                    matB[i][j] = Integer.parseInt(JOptionPane.showInputDialog("Ingresar el numero de la matriz B"));
+                }
+            }
+            int[][] suma = new int[mA][nA];
+            String mensaje = "La suma de ambas matrices es\n";
+            for (int i = 0; i <=(mA-1) ; i++) {
+                for (int j = 0; j <=(nA -1); j++) {
+                    suma[i][j] = matA[i][j] + matB[i][j];
+                    mensaje += suma[i][j];
+                    mensaje += " ";
+                }
+                mensaje += "\n";
+            }
+            JOptionPane.showMessageDialog(null, mensaje);
+        }
+    }
+}
+		</pre>
+	</div>
+	
+	<br>
+	<hr class="separador">
+	<br>
+	
+	<h3>RUBY</h3><br>
+	<div class="codigotareas">
+		<pre>
+puts "Azul Carolina Martínez Cabañas"
+puts "1868435					 ITS"
+puts "Periodo Enero-Junio 2020"
+puts "Ing. Ismael Gutiérrez Pimentel"
+puts("Suma de matrices")
+print "Ingresar el número de filas de la matriz A: "
+mA = gets().to_i
+print "Ingresar el número de columnas de la matriz A: "
+nA = gets().to_i
+print "Ingresar el número de filas de la matriz B: "
+mB = gets().to_i
+print "Ingresar el número de columnas de la matriz B: "
+nB = gets().to_i
+if nA != nB || mA != mB
+    abort("Las dimensiones de las matrices no son válidas")
+else
+    
+    matA = Array.new(mA){Array.new(nA)}
+    matB = Array.new(mB){Array.new(nB)}
+    for i in(0..(mA - 1))
+        for j in(0..(nA - 1))
+            print "Ingresar los números que pertenecen a la matriz A[#{i+1}][#{j+1}] :"
+            matA[i][j]=gets().to_i
+        end
+    end
+    for i in(0..(mB - 1))
+        for j in(0..(nB - 1))
+            print "Ingresar los números que pertenecen a la matriz B[#{i+1}][#{j+1}] :"
+            matB[i][j]=gets().to_i
+        end
+    end
+    mensaje = ""
+    suma = Array.new(mA){Array.new(nA)}
+    mensaje=mensaje+"La suma de ambas matrices es \n"
+    for i in(0..(mA-1))
+        for j in(0..(nA-1))
+            suma[i][j]= matA[i][j]+matB[i][j]
+            mensaje= mensaje+suma[i][j].to_s+" "
+        end
+        mensaje=mensaje+"\n"
+    end
+    print"#{mensaje}"
+end
+		</pre>
+	</div>
+	</body>
+</html>
